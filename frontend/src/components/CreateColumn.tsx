@@ -1,5 +1,6 @@
-import { useMutation, useQuery } from '@apollo/client';
-import { ColumnType, CREATE_COLUMN, QUERY_BOARD, TaskType } from './gql';
+import React from 'react'
+import { useMutation } from '@apollo/client';
+import { CREATE_COLUMN, QUERY_BOARD } from '../gql';
 
 function CreateColumn() {
   let input: HTMLInputElement | null;

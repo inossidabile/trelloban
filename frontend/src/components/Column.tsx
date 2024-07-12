@@ -1,4 +1,5 @@
-import { TaskType } from './gql';
+import React from 'react'
+import { TaskType } from '../gql';
 import CreateTask from './CreateTask';
 import SortTasks from './SortTasks';
 

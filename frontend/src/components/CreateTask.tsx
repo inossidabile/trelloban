@@ -1,5 +1,6 @@
+import React from 'react'
 import { useMutation } from '@apollo/client';
-import { CREATE_TASK, QUERY_BOARD, TaskType } from './gql';
+import { CREATE_TASK, QUERY_BOARD } from '../gql';
 
 function CreateTask({
     columnHandle,

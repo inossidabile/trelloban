@@ -1,8 +1,9 @@
+import React from 'react';
 import { useQuery } from '@apollo/client';
-import { ColumnType, QUERY_BOARD, TaskType } from './gql';
+import { ColumnType, QUERY_BOARD, TaskType } from '../gql';
 import Column from './Column';
 import CreateColumn from './CreateColumn';
-import { compare } from './utils';
+import { compare } from '../utils';
 
 function App() {
   const { loading, error, data } = useQuery(QUERY_BOARD);
@@ -10,8 +11,8 @@ function App() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
-  let columnns: ColumnType[] = data.board.columns;
-  let tasks: TaskType[] = data.board.tasks;
+  const columnns: ColumnType[] = data.board.columns;
+  const tasks: TaskType[] = data.board.tasks;
 
   return (
     <>

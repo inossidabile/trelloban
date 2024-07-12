@@ -1,5 +1,6 @@
-import { useMutation, useQuery } from '@apollo/client';
-import { ColumnType, CREATE_COLUMN, QUERY_BOARD, SORT_TASKS, TaskType } from './gql';
+import React from 'react'
+import { useMutation } from '@apollo/client';
+import { QUERY_BOARD, SORT_TASKS, TaskType } from '../gql';
 
 function SortTasks({
     tasks,
